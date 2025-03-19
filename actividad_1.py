@@ -14,5 +14,6 @@ if Temperatura <= 80:
         print("si llega a 80 se reiniciara el motor para bajar su temperatura")
 else:
     print ("El motor se apago por lo cual dejo de funcioanr")
-    print("el reactor se apago")
+    print("el reactor se reinicio ")
+    print ( F"Temperatura registrada actualmente:{Temperatura}°C")
 print("fin del programa")
