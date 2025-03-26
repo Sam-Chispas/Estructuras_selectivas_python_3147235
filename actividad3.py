@@ -44,13 +44,12 @@ Para este caso, los decuentos de ley son:
 '''
 #Inicializar variables, dar valor inicial de una variable asi no se utilice en ese momento
 contrato = input ("Ingrese el tipo de contrato:")
-salario_neto= 0
-
 if contrato == "a":
+    salario_neto = 0
     print ("Eligio: contrato a termino indefinido")
     antiguedad = int(input("Ingrese la antiguedad del empleado (Año):"))
     grado = int(input("Ingrese el grado del empleado:(1-5)"))
-    salario_neto= int(input("Ingrese el salario neto del empleado:"))
+    salario_neto= int(input("Ingrese el salario del empleado:"))
     salario_minimo = int(input("Ingrese el salario minimo:"))
     if grado == 1:
         salario_neto = salario_minimo*1.5
