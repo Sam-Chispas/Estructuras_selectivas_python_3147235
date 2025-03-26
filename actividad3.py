@@ -16,15 +16,19 @@ a pagar por horas
 #Inicializar variables, dar valor inicial de una variable asi no se utilice en ese momento
 contrato = input ("Ingrese el tipo de contrato:")
 salario_neto= 0
-valor_neto =10000
+
 if contrato == "a":
     print ("Eligio: contrato a termino indefinido")
 elif contrato =="b":
     print ("Eligio contrato  por prestación de servicio")
 elif contrato =="c":
     print ("Eligio:contrato de aprendizaje")
+    salario_minimo= int(input("Ingrese el valor del salario minimo"))
+    salario_neto=  salario_minimo-(salario_minimo*0.25)
+    
 elif contrato == "d":
     print ("Eligio: Contrato por jornada")
+    valor_neto =0
     numero_horas = int(input("Ingrese su numero de horas:"))
     valor_hora =int(input("Ingrese el valor a pagar por hora:"))
     salario_neto =  numero_horas* valor_neto
@@ -32,6 +36,7 @@ elif contrato == "d":
 
 else:
     print ("No hay ningun tipo de contraro, colcoa uno si es a,b,c o d ")
+
 print ("El salario neto es:",salario_neto)
 print ("No colocaste un salario neto")
 print ("Fin de programa")
